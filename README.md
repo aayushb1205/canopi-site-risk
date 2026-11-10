@@ -6,7 +6,7 @@ Public website for [getcanopi.eco](https://getcanopi.eco): flood, landslide and 
 - `map.html` and `app.js`: the map (MapLibre GL)
 - `data/`: the pictures, click data and asset files the map reads
 
-Pushing to `main` deploys the site with GitHub Pages (`.github/workflows/pages.yml`).
+Pushing to `main` deploys the site with GitHub Pages (Settings → Pages → Deploy from a branch, `main`, root).
 
 Data: JRC Global Flood Hazard, Copernicus GLO-30, ICIMOD, BIPAD, Department of Roads, Department of Electricity Development, Copernicus EMS. Bridges and roads include data © OpenStreetMap contributors, available under the Open Database License (ODbL).
 
