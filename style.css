@@ -1,0 +1,72 @@
+:root { --ink:#1f2328; --muted:#5b616b; --line:#d9dce1; --bg:#ffffff; --panel:#fafaf8;
+        --vh:#9b2226; --h:#e76f51; --m:#f4a261; --l:#e9c46a; --vl:#2a9d8f; --accent:#0f6e56; }
+* { box-sizing:border-box; }
+html, body { margin:0; height:100%; font:15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg); }
+.bar { display:flex; align-items:center; gap:16px; padding:10px 16px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
+.brand strong { font-size:18px; color:var(--accent); } .brand span { color:var(--muted); }
+.hazards { display:flex; gap:6px; flex-wrap:wrap; }
+.hazards button { font:inherit; padding:6px 12px; border:1px solid var(--line); background:#fff; border-radius:999px; cursor:pointer; color:var(--ink); }
+.hazards button.on { background:var(--ink); color:#fff; border-color:var(--ink); }
+main { display:flex; height:calc(100% - 55px); }
+#map { flex:1; min-width:0; }
+#panel { width:380px; overflow-y:auto; border-left:1px solid var(--line); background:var(--panel); padding:14px 16px; display:flex; flex-direction:column; gap:14px; }
+#layers { display:flex; flex-direction:column; gap:4px; font-size:14px; }
+#legend { font-size:13px; color:var(--muted); }
+#legend .row { display:flex; align-items:center; gap:8px; margin:2px 0; }
+#legend .sw { width:14px; height:14px; border-radius:3px; display:inline-block; }
+#legend .title { color:var(--ink); font-weight:600; margin-bottom:4px; }
+#card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:12px 14px; }
+#card h2 { font-size:16px; margin:0 0 2px; } #card .sub { color:var(--muted); font-size:13px; margin:0 0 10px; }
+#card .hz { border-top:1px solid var(--line); padding:8px 0; }
+#card .hz:first-of-type { border-top:none; }
+#card .hz h3 { font-size:14px; margin:0 0 4px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+#card .hz p { margin:2px 0; font-size:14px; }
+.pill { font-size:12px; padding:1px 8px; border-radius:999px; color:#fff; font-weight:600; }
+.r5 { background:var(--vh); } .r4 { background:var(--h); } .r3 { background:var(--m); color:#3d2a00; } .r2 { background:var(--l); color:#3d2a00; } .r1 { background:var(--vl); } .r0 { background:#9aa0a6; }
+.conf { font-size:12px; color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:0 7px; }
+.hint, .note { color:var(--muted); font-size:13px; }
+#about { font-size:12px; color:var(--muted); margin-top:auto; } #about p { margin:4px 0; }
+.maplibregl-popup-content { font:13px system-ui, sans-serif; }
+@media (max-width: 760px) {
+  main { flex-direction:column; height:auto; }
+  #map { height:60vh; flex:none; }
+  #panel { width:100%; border-left:none; border-top:1px solid var(--line); }
+}
+#card .hz.event { background:#fff4e5; border:1px solid #f4c27a; border-radius:8px; padding:8px 10px; margin:4px 0 6px; }
+#card .hz.event h3 { color:#7a4100; }
+#legend .ic { width:14px; height:14px; display:inline-block; flex:none; }
+#legend .ic.hydro { background:#1d3557; border-radius:3px; position:relative; }
+#legend .ic.hydro::after { content:'⚡'; font-size:10px; position:absolute; left:2px; top:-1px; }
+#legend .ic.bridge { width:10px; height:10px; margin:0 2px; transform:rotate(45deg); background:radial-gradient(circle, #e76f51 30%, #fff 34%); border:1.5px solid #1f2328; }
+#legend .ic.road { height:4px; background:#e76f51; border-radius:2px; }
+#legend .ic.bridgeic { width:16px; height:16px; border-radius:50%; border:2.5px solid #e76f51; background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 6.5h10M4.5 6.5v3M11.5 6.5v3' stroke='%231f2328' stroke-width='1.4' stroke-linecap='round'/%3E%3Cpath d='M4.5 9.5a3.5 3.5 0 0 1 7 0' fill='none' stroke='%231f2328' stroke-width='1.2'/%3E%3C/svg%3E") center/100% no-repeat; }
+#legend .ic.pin { width:12px; height:15px; background:var(--c); border-radius:50% 50% 50% 0; transform:rotate(-45deg) scale(.8); border:1.5px solid #fff; outline:1px solid #ccc; margin:0 1px; }
+#legend .ic.deck { width:22px; height:7px; background:#fff; border-top:2px solid #1f2328; border-bottom:2px solid #1f2328; position:relative; }
+#legend .ic.deck::after { content:''; position:absolute; left:2px; right:2px; top:1px; height:1.5px; background:#e76f51; }
+a.brand { text-decoration:none; color:inherit; }
+
+/* Canopi brand (getcanopi.eco) */
+:root{--ink:#1A1A1A;--muted:#5A5A5A;--line:#E8E6E1;--bg:#FAFAF8;--panel:#FAFAF8;--accent:#1B4332;--sage:#40916C}
+html,body{font:15px/1.55 "DM Sans",system-ui,sans-serif}
+.bar{background:#FAFAF8;border-bottom:1px solid var(--line);height:56px;flex-wrap:nowrap}
+a.brand{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+a.brand img{border-radius:6px;display:block}
+.brand strong{font:400 22px/1 "Instrument Serif",Georgia,serif;color:var(--accent)}
+.brand span{font:500 11px/1 "JetBrains Mono",monospace;letter-spacing:2px;text-transform:uppercase;color:var(--sage);padding-left:10px;border-left:1px solid var(--line)}
+main{height:calc(100% - 56px)}
+.hazards button{font:500 14px/1 "DM Sans",sans-serif;padding:8px 14px;border-color:var(--line);color:var(--muted)}
+.hazards button:hover{color:var(--accent);border-color:#cfd8d2}
+.hazards button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+#panel{background:var(--bg)}
+#layers{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+#layers input{accent-color:var(--accent)}
+#legend .title{font:500 11px/1.4 "JetBrains Mono",monospace;letter-spacing:1px;text-transform:uppercase;color:var(--sage);margin:8px 0 6px}
+#card{border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+#card h2{font:400 24px/1.15 "Instrument Serif",Georgia,serif;color:var(--accent);margin-bottom:4px}
+#card .hz h3{font-size:15px;font-weight:700}
+.pill{font:500 11px/1.6 "JetBrains Mono",monospace;letter-spacing:.3px}
+.conf{font:11px/1.6 "JetBrains Mono",monospace}
+#card .hz.event{background:#FBF6ED;border:none;border-left:3px solid #B68D40;border-radius:0 8px 8px 0}
+#card .hz.event h3{color:#6b4f1d}
+#about{color:#9B9B9B}
+@media (max-width:760px){.brand span{display:none}.bar{height:auto;flex-wrap:wrap}main{height:auto}}

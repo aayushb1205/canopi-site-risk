@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canopi Site Risk · Nepal</title>
+<meta name="description" content="Flood, landslide and glacial lake outburst hazard for six regions of Nepal, square by square at 90 m, with confidence on every card.">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="img/canopi_logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="index.html"><img src="img/canopi_logo.png" alt="" width="28" height="28"><strong>canopi</strong> <span>Site Risk · Nepal</span></a>
+  <nav class="hazards" role="group" aria-label="Hazard">
+    <button data-hz="flood" class="on">Flood</button>
+    <button data-hz="landslide">Landslide</button>
+    <button data-hz="glacial">Glacial lake outburst</button>
+  </nav>
+</header>
+<main>
+  <div id="map" aria-label="Hazard map"></div>
+  <aside id="panel">
+    <div id="layers">
+      <label><input type="checkbox" data-layer="hydro" checked> Hydropower plants</label>
+      <label><input type="checkbox" data-layer="bridges"> Bridges</label>
+      <label><input type="checkbox" data-layer="roads"> National roads</label>
+    </div>
+    <div id="legend"></div>
+    <div id="card"><p class="hint">Click anywhere inside the six outlined regions, or on a plant, bridge or road, to see why it is rated the way it is.</p></div>
+    <footer id="about">
+      <p><strong>Screening tool, not engineering advice.</strong> Ratings come from open global and national data at about 90 m. Every card says how much to trust it.</p>
+      <p class="src">Data: JRC Global Flood Hazard (flood depth) · Copernicus GLO-30 (elevation) · ICIMOD (ranked glacial lakes, 2015) · BIPAD (disaster records) · OpenStreetMap contributors (bridges, ODbL) · Department of Roads (strategic roads) · DoED (hydropower licences) · Copernicus EMS (Trishuli 2026 check). Basemap © OpenFreeMap, © OpenMapTiles, © OpenStreetMap contributors.</p>
+    </footer>
+  </aside>
+</main>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canopi Site Risk · Nepal</title>
+<meta name="description" content="Flood, landslide and glacial lake outburst risk in Nepal for a spot, not a district: every 90 m square of six regions rated, with hydropower plants, bridges and roads scored one by one.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="img/canopi_logo.png">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+  <a class="nav-logo" href="index.html"><img src="img/canopi_logo.png" alt="" width="32" height="32"><span>canopi</span></a>
+  <nav><a href="#how">How it works</a><a href="#limits">Limits</a><a class="go" href="map.html">Open the map</a></nav>
+</div></header>
+
+<main>
+<section class="hero">
+  <p class="eyebrow">Canopi Site Risk · Nepal · v1</p>
+  <div class="lede">
+    <h1>Hazard for a spot,<br><em>not a whole district.</em></h1>
+    <div class="lede-side">
+      <p>Canopi rates flood, landslide and glacial lake outburst hazard for every 90 m of six regions, and for each hydropower plant, bridge and national road, and tells you the confidence level of every rating.</p>
+      <a class="cta" href="map.html">Open the map →</a>
+      <p class="small">Free and public. Screening tool, not engineering advice.</p>
+    </div>
+  </div>
+  <dl class="stats">
+    <div><dt>Regions</dt><dd>6</dd></div>
+    <div><dt>Hydropower plants</dt><dd>204</dd></div>
+    <div><dt>Bridges</dt><dd>4,249</dd></div>
+    <div><dt>National road</dt><dd>2,591 km</dd></div>
+  </dl>
+  <figure class="zoom" aria-label="The same valley at three levels of detail">
+    <div class="panels">
+      <div class="panel"><img src="img/home_district.png" alt="Rasuwa and Nuwakot districts coloured by their worst glacial outburst exposure: Rasuwa entirely dark red"><p><strong>District</strong> All of Rasuwa reads Very high.</p></div>
+      <div class="panel"><img src="img/home_1km_box.png" alt="The same area in 1 km squares: only a band along the Langtang and Bhotekoshi rivers is coloured"><p><strong>1 km squares</strong> The risk follows two valleys.</p></div>
+      <div class="panel wide"><img src="img/home_90m_zoom.png" alt="Close-up of the boxed area in 90 m squares: a narrow strip along the Langtang valley floor, darkest near the lake"><p><strong>90 m squares</strong> Inside the box: the strip of valley floor a surge could reach, darkest near the lake.</p></div>
+    </div>
+    <figcaption>Glacial lake outburst exposure in the Trishuli valley. Rasuwa covers about 1,500 km²; about 16 km² of it lies in an outburst path.</figcaption>
+  </figure>
+</section>
+
+<section id="how" class="how">
+  <p class="eyebrow">How it works</p>
+  <h2>Click anywhere,<br><em>read why.</em></h2>
+  <div class="how-grid">
+    <div class="explain">
+      <p>Every square and every asset opens a short report with four parts. Each says what the rating is, where it comes from, and how much to trust it.</p>
+      <dl>
+        <dt>Flood</dt><dd>The chance of water reaching the spot in the next 30 years, and how deep, from the EU's global flood maps (JRC). Where those maps fail in narrow gorges or skip a river, we rate from the ground's height above the river and say so.</dd>
+        <dt>Landslide</dt><dd>How steep the ground is, from 30 m elevation data. Slope only for now; rainfall, geology and past slides come later.</dd>
+        <dt>Glacial lake outburst</dt><dd>Whether the spot sits on the valley floor below one of the 47 lakes ICIMOD ranks as dangerous, and how far downstream. Where a surge could reach, not how deep or when.</dd>
+        <dt>History</dt><dd>Floods and landslides recorded within about 1 km since 2011, from Nepal's disaster records (BIPAD).</dd>
+      </dl>
+    </div>
+    <article class="sample" aria-label="Example report">
+      <h3>Rasuwagadhi hydropower</h3>
+      <p class="where">Gosaikunda, Rasuwa district. 111 MW on the Bhotekoshi, placed by hand at its headworks.</p>
+      <div class="happened">July 2025: headworks washed away by an outburst flood from a lake in Tibet.</div>
+      <p><span class="r r5">Very high</span> Flood, high confidence. The intake sits in the 100-year flood zone.</p>
+      <p><span class="r r3">Moderate</span> Glacial outburst. 36 km below a Rank II lake in Tibet. Only ranked lakes are traced, so outbursts from unlisted lakes, like this one, can be under-rated.</p>
+      <p><span class="r r4">High</span> Landslide, from slope.</p>
+    </article>
+  </div>
+</section>
+
+
+<section class="where">
+  <p class="eyebrow">Coverage</p>
+  <h2>Six regions <em>in v1.</em></h2>
+  <ul class="regions">
+    <li><strong>Trishuli valley</strong> Rasuwa, Nuwakot. The 2025 outburst and 2026 debris flood.</li>
+    <li><strong>Sun Koshi and Roshi</strong> Sindhupalchok, Kavre. Jure 2014, Melamchi 2021, September 2024.</li>
+    <li><strong>Koshi east</strong> Sunsari, Morang, Sankhuwasabha. The August 2017 Terai floods, June 2023 flash floods.</li>
+    <li><strong>Kali Gandaki hills</strong> Myagdi, Baglung, Parbat. Losses every year since 2011.</li>
+    <li><strong>Mid-West Terai</strong> Bardiya, Banke, Surkhet. The August 2014 Karnali and Babai floods.</li>
+    <li><strong>Koshi and Arun glacial belt</strong> Solukhumbu, Dolakha. Below Imja Tsho, Tsho Rolpa and Lower Barun.</li>
+  </ul>
+</section>
+
+<section id="limits" class="limits">
+  <p class="eyebrow">Limits</p>
+  <h2>What it is,<br><em>and isn't.</em></h2>
+  <div class="cols">
+    <p>Canopi is a screening tool. It shows where to look harder, for lenders, engineers, NGOs and anyone weighing a site. It is not a site survey, a design flood or an early warning.</p>
+    <p>90 m is the finest level shown, because most of the underlying data isn't reliable below that. There are no loss estimates, future climate scenarios or real-time alerts yet.</p>
+    <p>Data: JRC Global Flood Hazard, Copernicus GLO-30 elevation, ICIMOD glacial lake inventory (2015), BIPAD, OpenStreetMap contributors (ODbL), Department of Roads, Department of Electricity Development, Copernicus Emergency Management Service.</p>
+  </div>
+  <a class="cta" href="map.html">Open the map →</a>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <p><span class="nav-logo small"><img src="img/canopi_logo.png" alt="" width="22" height="22"><span>canopi</span></span> Canopi, 2026. Questions or corrections: <a href="mailto:hello@getcanopi.eco">hello@getcanopi.eco</a></p>
+</div></footer>
+</body>
+</html>
